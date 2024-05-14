@@ -1,4 +1,4 @@
-
+local httpgetfunction = httpget
 
 if not httpgetfunction then
 	warn("uhh.. dude... does your executor like... support httpget? if it does, i couldn't find it...")
