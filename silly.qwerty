@@ -1,5 +1,5 @@
 
-classDICT = { AdvancedDragger={
+return { AdvancedDragger={
     AncestryChanged="Event",
     Archivable="boolean",
     AttributeChanged="Event",
