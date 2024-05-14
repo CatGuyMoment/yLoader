@@ -1,9 +1,3 @@
-function httpget(url)
-    local d,ise,Body=false,false,""
-    game:GetService("HttpService"):RequestInternal({Url = url,Method = "GET"}):Start(function(suc, res) if not suc then Body = res.StatusCode ise = true d=true return end Body=res.Body d=true end)
-    repeat task.wait() until d
-    if ise then error(Body, 0) end return Body
-end
 
 
 if not httpgetfunction then
