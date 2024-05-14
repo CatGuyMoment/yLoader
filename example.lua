@@ -1,4 +1,4 @@
-local yLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/CatGuyMoment/yLoader/main/lua"))
+local yLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/CatGuyMoment/yLoader/main/lua"))()
 
 
 
