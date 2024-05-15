@@ -1,4 +1,4 @@
-local literallyEveryProperty = load_string(httpget("https://raw.githubusercontent.com/CatGuyMoment/yLoader/main/silly.qwerty"))
+local literallyAllTheProperties = _G.runCode(httpget("https://raw.githubusercontent.com/CatGuyMoment/yLoader/main/silly.qwerty"))()
 local xmlParser = {}
 local httpservice = game:GetService("HttpService")
 
@@ -308,4 +308,6 @@ function xmlParser:Parse(instanc)
 	return wrap("roblox",parsed,{version="4"})
 end
 
-saveinstance = function(inst) if inst == game then warn("SAVEINSTANCE DOESN'T SUPPORT SAVING THE ENTIRE GAME DIRECTLY. PLEASE SAVE IN FRAGMENTS") warn("eg: saveinstance(game.Workspace)") return end return xmlParser.new():Parse(inst) end
+_G.yLoad = function(inst) if inst == game then warn("SAVEINSTANCE DOESN'T SUPPORT SAVING THE ENTIRE GAME DIRECTLY. PLEASE SAVE IN FRAGMENTS") warn("eg: saveinstance(game.Workspace)") return end return xmlParser.new():Parse(inst) end
+
+print("yload loaded!")
